@@ -1,0 +1,37 @@
+{
+  "name": "@surge/example-yargs",
+  "version": "0.1.0",
+  "description": "How to expose the Surge CLI within your own command line tool, built with Yargs.",
+  "homepage": "https://surge.sh",
+  "repository": "https://github.com/surge-sh/example-yargs.git",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "author": "Kenneth Ormandy <kenneth@surge.sh> (http://kennethormandy.com)",
+  "contributors": [
+    "Kenneth Ormandy <kenneth@surge.sh> (http://kennethormandy.com)",
+    "Brock Whitten   <brock@surge.sh>   (http://sintaxi.com)"
+  ],
+  "keywords": [
+    "surge",
+    "surge.sh",
+    "example",
+    "yargs",
+    "cli",
+    "deploy"
+  ],
+  "bin": {
+    "example": "bin/example.js"
+  },
+  "dependencies": {
+    "chalk": "1.1.1",
+    "surge": "git+https://github.com/sintaxi/surge.git#ko-yargs",
+    "yargs": "3.29.0"
+  },
+  "scripts": {
+    "start": "node ./bin/example",
+    "lint": "standard"
+  },
+  "devDependencies": {
+    "standard": "5.3.1"
+  }
+}
